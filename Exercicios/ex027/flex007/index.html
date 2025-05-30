@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #2222FE;
+        }
+
+        .conteiner {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 15px;
+            margin: auto;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item {
+            background-color: blue;
+            color: white;
+            border: 1px solid black;
+            box-shadow: 5px 5px black;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 2em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 5px;
+            padding: 30px;
+        }
+
+        .item:hover {
+            box-shadow: inset 5px 5px black;
+        }
+
+        #i1 {
+            order: 0;
+        }
+
+        #i2 {
+            order: -2;
+        }
+
+        #i3 {
+            order: 4;
+        }
+
+        #i4 {
+            order: 2;
+        }
+
+        #i5 {
+            order: 1;
+        }
+
+        #i6 {
+            order: -3;
+        }
+
+        #i7 {
+            order: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>
